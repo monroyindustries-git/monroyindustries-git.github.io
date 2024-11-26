@@ -1,0 +1,168 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  header {
+    text-align: center;
+    background-color: #FFF;
+    padding: 1rem;
+  }
+
+  p, ul {
+    font-size: 1.2em;
+  }
+  
+  .logo {
+    margin: 10% auto 15%;
+    height: auto;
+  }
+  
+
+  #apps {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: flex-start; /* Align apps to the left */
+    gap: 2%; /* Adds gaps between items horizontally */
+    padding: 0 10%; /* Center the entire section with padding */
+    margin: 15rem 0; /* Adjust vertical spacing of the section */
+  }
+  
+  .app-card {
+    background-color: #fff;
+    border-radius: 12.5%;
+    width: 31%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 2%; /* Adds gaps between rows */
+    transition: transform 0.3s ease;
+  }
+
+  @media (max-width: 768px) {
+    .app-card {
+      width: 45%; /* Reduce to 2 apps per row on smaller screens */
+      height: auto; /* Adjust height for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #apps {
+        justify-content: center;
+    }
+
+    .app-card {
+      width: 80%; /* Full width for one app per row on very small screens */
+      height: auto; /* Adjust height further */
+    }
+  }
+  
+  .app-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .app-card:hover {
+    transform: scale(1.1);
+  }
+  
+  #about {
+    text-align: justify;
+    margin: 0;
+    padding: 15rem 10%;
+    background-color: #fff;
+  }
+  
+  #about h2 {
+    margin-top: 0;
+  }
+  
+  #founder_role {
+    font-weight: 800;
+    font-size: 1.4em;
+  }
+
+  .about-content {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: flex-start; /* Keep everything left-aligned */
+    gap: 2rem; /* Space between the image and the text */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+
+  .profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 2%;
+    object-fit: cover;
+    flex-shrink: 0; /* Prevent the image from shrinking */
+  }
+  
+  .about-text {
+    flex: 1; /* Allow the text to take up the remaining space */
+    text-align: justify;
+    max-width: 800px;
+  }
+  
+  .about-text p {
+    margin: 0 0 1rem; /* Add spacing between paragraphs */
+  }
+
+  @media (max-width: 800px) {
+    .about-text {
+        flex-basis: 70%;
+    }
+  }
+
+  footer {
+    text-align: left;
+    margin: 0;
+    padding: 15rem 10% 2rem;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  footer h2 {
+    margin: 0 0 2rem 0;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer p {
+    margin: 0.5rem 0;
+  }
+
+  #contact_me {
+    list-style: none;
+    padding: 0;
+  }
+
+  #contact_me li {
+    margin-bottom: 1.2rem;
+  }
+
+    #contact_me li a:hover {
+        /* font-size: 1.3em; */
+        font-weight: 700;
+        text-decoration: underline;
+    }
+  
+  #copyright {
+    margin-top: 12rem;
+    text-align: center;
+  }
