@@ -21,6 +21,10 @@ body {
     top: 20px;
 }
 
+#applelogo {
+    height: 3.5rem;
+}
+
 #landing-container {
     display: flex;
     align-items: center;
@@ -36,10 +40,10 @@ body {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
     font-family: 'Times New Roman', Times, serif;
-    color: #00B012;
+    color: black;
 }
 
 .download-button {
@@ -55,7 +59,7 @@ h2 {
 
 #image-box img {
     max-width: 100%;
-    height: 500px;
+    height: 650px;
 }
 
 footer {
