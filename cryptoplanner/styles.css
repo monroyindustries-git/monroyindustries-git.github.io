@@ -94,3 +94,27 @@ footer a {
         margin: 0 auto;
     }
 }
+
+
+#support-container {
+    max-width: 600px;
+    margin: 10rem auto;
+    text-align: center;
+}
+
+.support-button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin: 1.5rem 0;
+}
+
+#faq {
+    margin-top: 2rem;
+    font-style: italic;
+    color: #666;
+}
