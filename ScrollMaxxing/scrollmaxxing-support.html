@@ -3,30 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>scrollmaxxing</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Support — Scrollmaxxing</title>
+    <meta name="description" content="Need help with Scrollmaxxing? Get in touch with support.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --cyan: #00C9DB;
+            --cyan-light: #E0F9FB;
+            --cyan-dark: #00A8B8;
+            --dark: #0A0A0A;
+            --gray-800: #1A1A1A;
+            --gray-600: #4A4A4A;
+            --gray-400: #8A8A8A;
+            --gray-200: #E5E5E5;
+            --gray-100: #F5F5F5;
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+            color: var(--dark);
+            background: var(--white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* NAV */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            padding: 16px 24px;
+            background: rgba(255,255,255,0.9);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--gray-200);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-cta {
+            background: var(--dark);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 100px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+        .nav-cta:hover { opacity: 0.85; transform: scale(0.98); }
+
+        /* PAGE HERO */
+        .page-hero {
+            padding: 140px 24px 80px;
+            text-align: center;
+            background: linear-gradient(180deg, var(--cyan-light) 0%, var(--white) 100%);
+        }
+        .section-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--cyan-dark);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+        }
+        .page-hero h1 {
+            font-size: clamp(32px, 6vw, 48px);
+            font-weight: 700;
+            letter-spacing: -1.5px;
+            margin-bottom: 16px;
+        }
+        .page-hero p {
+            font-size: 17px;
+            color: var(--gray-600);
+            max-width: 460px;
+            margin: 0 auto 36px;
+            line-height: 1.6;
+        }
+        .support-button {
+            display: inline-block;
+            background: var(--dark);
+            color: var(--white);
+            padding: 14px 32px;
+            border-radius: 100px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+        .support-button:hover { opacity: 0.85; transform: scale(0.98); }
+
+        /* SUPPORT CARD */
+        main {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 0 24px 100px;
+        }
+        .support-card {
+            background: var(--gray-100);
+            border: 1px solid var(--gray-200);
+            border-radius: 20px;
+            padding: 32px 28px;
+            text-align: center;
+        }
+        .support-card-icon {
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+        .support-card h3 {
+            font-size: 19px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.3px;
+        }
+        .support-card p {
+            font-size: 15px;
+            color: var(--gray-600);
+            line-height: 1.6;
+        }
+        .support-card a {
+            color: var(--cyan-dark);
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .support-card a:hover { text-decoration: underline; }
+
+        /* FOOTER */
+        footer {
+            background: var(--dark);
+            color: rgba(255,255,255,0.5);
+            padding: 48px 24px;
+        }
+        .footer-inner {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 32px;
+        }
+        .footer-brand {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 8px;
+        }
+        .footer-links {
+            display: flex;
+            gap: 40px;
+        }
+        .footer-col h4 {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .footer-col a {
+            display: block;
+            color: rgba(255,255,255,0.5);
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 8px;
+            transition: color 0.2s;
+        }
+        .footer-col a:hover { color: var(--white); }
+
+        @media (max-width: 768px) {
+            .footer-inner { flex-direction: column; }
+            .footer-links { flex-direction: column; gap: 24px; }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <a href="./scrollmaxxing.html"><img src="logotitlecentered.png" alt="scrollmaxxing Logo" class="logo"></a>
-    </header>
 
-    <main id="support-container">
-        <h2>Need Help?</h2>
-        <p>If you have any questions or need assistance, feel free to reach out.</p>
+    <!-- NAV -->
+    <nav>
+        <a href="./scrollmaxxing.html"><img src="logotitlecentered.png" alt="scrollmaxxing" style="height: 28px;"></a>
+        <a href="./scrollmaxxing.html#download" class="nav-cta">Download</a>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <p class="section-label">Support</p>
+        <h1>need help?</h1>
+        <p>stuck, confused, or just want to yell about your rot score? we read every message.</p>
         <a href="mailto:support@monroyindustries.xyz" class="support-button">Contact Support</a>
+    </section>
 
-        <!-- <section id="faq">
-            <h3>Frequently Asked Questions</h3>
-            <p>Coming soon...</p>
-        </section> -->
+    <main>
+        <div class="support-card">
+            <div class="support-card-icon">✉️</div>
+            <h3>email us directly</h3>
+            <p>reach out any time at <a href="mailto:support@monroyindustries.xyz">support@monroyindustries.xyz</a> and we'll get back to you.</p>
+        </div>
     </main>
 
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; <b>2026 Monroy Industries</b> | 
-        <a href="./scrollmaxxing-termsofservice.html">Terms</a> | 
-        <a href="./scrollmaxxing-privacy.html">Privacy</a> | 
-        <a href="./scrollmaxxing-support.html">Support</a></p>
+        <div class="footer-inner">
+            <div>
+                <div class="footer-brand">scrollmaxxing</div>
+                <p style="font-size: 14px;">how cooked is your screen time?</p>
+                <p style="font-size: 13px; margin-top: 16px;">&copy; 2026 Monroy Industries</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <a href="./scrollmaxxing-privacy.html">Privacy Policy</a>
+                    <a href="./scrollmaxxing-termsofservice.html">Terms of Service</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <a href="./scrollmaxxing-support.html">Support</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Socials</h4>
+                    <a href="#">TikTok</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
     </footer>
+
 </body>
 </html>
