@@ -54,9 +54,9 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         :root {
-            --cyan: #00C9DB;
-            --cyan-light: #E0F9FB;
-            --cyan-dark: #00A8B8;
+            --cyan: #1BA100;
+            --cyan-light: #E1FFDB;
+            --cyan-dark: #137200;
             --dark: #0A0A0A;
             --gray-800: #1A1A1A;
             --gray-600: #4A4A4A;
@@ -94,11 +94,20 @@
             align-items: center;
         }
         .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
             font-size: 20px;
             font-weight: 700;
             color: var(--dark);
             text-decoration: none;
             letter-spacing: -0.5px;
+        }
+        .nav-logo img {
+            display: block;
+            height: 28px;
+            width: 28px;
+            border-radius: 6px;
         }
         .nav-cta {
             background: var(--dark);
@@ -399,7 +408,7 @@
 
     <!-- NAV -->
     <nav>
-        <a href="./scrollmaxxing.html"><img src="logotitlecentered.png" alt="scrollmaxxing" style="height: 28px;"></a>
+        <a href="./scrollmaxxing.html" class="nav-logo"><img src="icon.png" alt="">scrollmaxxing</a>
         <a href="#download" class="nav-cta">Download</a>
     </nav>
 
