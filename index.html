@@ -4,68 +4,121 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Monroy Industries</title>
+  <meta name="description" content="Monroy Industries — building bold mobile applications and software products.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <img src="logo.svg" alt="Monroy Industries Logo" class="logo">
-  </header>
+
+  <nav id="site-nav">
+    <a class="nav-brand" href="#top">
+      <img src="logo-white.png" alt="Monroy Industries">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#apps">Applications</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
   <main>
-    <section id="apps">
-      <div class="app-card">
-        <a href="./cryptoplanner/cryptoplanner.html">
-          <img src="cryptoplanner_logo.png" alt="CryptoPlanner Logo">
+    <section id="top" class="hero">
+      <div class="hero-inner">
+        <img src="logo-white.png" alt="Monroy Industries" class="hero-logo">
+        <p class="hero-tagline">Bold ideas. Built into software.</p>
+      </div>
+      <a href="#apps" class="scroll-cue" aria-label="Scroll to applications">
+        <span></span>
       </a>
-      </div>
-      <div class="app-card">
-        <img src="coming_soon.png" alt="App 2">
-      </div>
-      <div class="app-card">
-        <img src="coming_soon.png" alt="App 3">
-      </div>
-      <div class="app-card">
-        <img src="coming_soon.png" alt="App 3">
-      </div>
-      <div class="app-card">
-        <img src="coming_soon.png" alt="App 3">
-      </div>
     </section>
 
-    <section id="about">
-      <h2>About the Founder</h2>
-      <div class="about-content">
-        <img src="profile.JPG" alt="Francisco Monroy" class="profile-image">
-        <div class="about-text">
-          <p id="founder_role">Francisco Monroy, Founder & CEO</p>
-          <p>I am deeply passionate about innovation and entrepreneurship. In 2024, I made 
-            the bold decision to leave my Ph.D. program in electrical engineering, where I 
-            was working on developing an AI-driven application for wound analysis in healthcare. 
-            Unenamoured by the rigidity and long-term commitments required of academia and healthcare, 
-            especially as a combination, I decided to find a different approach. I now aim to 
-            launch mobile applications, web products & services, and other software that may evolve 
-            into startups, with the goal of accumulating captial to fund greater and greater visions
-             for impactful technology. Long-term interests include climate tech, space exploration and 
-             asteriod mining, agriculture, biotechnology, cybersecurity, energy, healthcare, and manufacturing.</p>
-          <p>Growing up, I admired Iron Man. His ingenuity and ability to pursue his visions inspired 
-            my vision for Monroy Industries. Monroy Industries embodies a commitment to bold, 
-            transformative technology with the potential to create meaningful impact. </p>
-          <p>Follow the journey: <a href="https://franciscomonroy.xyz">Visit my main page</a>.
-          </p>
+    <section id="apps">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="eyebrow">Applications</p>
+          <h2>Products in the field</h2>
+        </div>
+        <div class="app-grid">
+          <a class="app-card" href="./cryptoplanner/cryptoplanner.html">
+            <img src="cryptoplanner_logo.png" alt="Crypto Planner Logo">
+            <span class="app-name">Crypto Planner</span>
+          </a>
+          <a class="app-card" href="./Affirmations/Affirmations.html">
+            <img src="affirmation_logo.jpg" alt="Affirmations Logo">
+            <span class="app-name">Affirmations</span>
+          </a>
+          <a class="app-card" href="./colorverseai/colorverseai.html">
+            <img src="coloverse_logo.png" alt="ColorVerse AI Logo">
+            <span class="app-name">ColorVerse AI</span>
+          </a>
+          <a class="app-card" href="./obliteratedai/obliteratedai.html">
+            <img src="obliterated_logo.png" alt="Obliterated AI Logo">
+            <span class="app-name">Obliterated AI</span>
+          </a>
+          <a class="app-card" href="./ScrollMaxxing/index.html">
+            <img src="scrollmaxxing_logo.png" alt="Scrollmaxxing Logo">
+            <span class="app-name">Scrollmaxxing</span>
+          </a>
+          <a class="app-card" href="./STAKD/STAKD.html">
+            <img src="stakd_logo.png" alt="STAKD Logo">
+            <span class="app-name">STAKD</span>
+          </a>
+          <a class="app-card" href="./STAKD-Arcs/stakd-arcs.html">
+            <img src="arcs_logo.png" alt="STAKD Arcs Logo">
+            <span class="app-name">STAKD Arcs</span>
+          </a>
         </div>
       </div>
     </section>
 
-    <footer>
-        <h2>Why are you still scrolling?</h2>
-        <ul id="contact_me">
-            <li><a href="https://forms.gle/SMygGajEKxATCA4G8">Contact Us</a></li>
-            <li><a href="https://forms.gle/45V3vzQCjxJMEXYi9">Sell Me Your App</a></li>
-            <li><a href="https://forms.gle/pbrVYPTQLid58VXj6">Work with Us</a></li>
-        </ul>
+    <section id="about">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="eyebrow">Founder</p>
+          <h2>About Monroy Industries</h2>
+        </div>
+        <div class="about-content">
+          <img src="profile.JPG" alt="Francisco Monroy" class="profile-image">
+          <div class="about-text">
+            <p id="founder_role">Francisco Monroy, Founder &amp; CEO</p>
+            <p>I am deeply passionate about innovation and entrepreneurship. In 2024, I made
+              the bold decision to leave my Ph.D. program in electrical engineering, where I
+              was working on developing an AI-driven application for wound analysis in healthcare.
+              Unenamoured by the rigidity and long-term commitments required of academia and healthcare,
+              especially as a combination, I decided to find a different approach. I now aim to
+              launch mobile applications, web products &amp; services, and other software that may evolve
+              into startups, with the goal of accumulating capital to fund greater and greater visions
+              for impactful technology. Long-term interests include climate tech, space exploration and
+              asteroid mining, agriculture, biotechnology, cybersecurity, energy, healthcare, and manufacturing.</p>
+            <p>Growing up, I admired Iron Man. His ingenuity and ability to pursue his visions inspired
+              my vision for Monroy Industries. Monroy Industries embodies a commitment to bold,
+              transformative technology with the potential to create meaningful impact.</p>
+            <p>Follow the journey: <a href="https://franciscomonroy.xyz">Visit my main page</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <div id="copyright">
-        <p>Monroy Industries &copy; 2024</p>
+    <footer id="contact">
+      <div class="section-inner footer-inner">
+        <div class="footer-brand">
+          <img src="logo-white.png" alt="Monroy Industries">
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <p class="footer-col-title">Get in touch</p>
+            <ul>
+              <li><a href="https://forms.gle/SMygGajEKxATCA4G8">Contact Us</a></li>
+              <li><a href="https://forms.gle/45V3vzQCjxJMEXYi9">Sell Me Your App</a></li>
+              <li><a href="https://forms.gle/pbrVYPTQLid58VXj6">Work with Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Monroy Industries. All rights reserved.</p>
       </div>
     </footer>
   </main>
